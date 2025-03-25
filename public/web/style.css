@@ -1,0 +1,117 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    transition: all 0.4s ease-in-out;
+    background: transparent;
+    color: #fff;
+}
+.navbar.scrolled {
+    background-color: #ff9800 !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.navbar-toggler {
+    border: none;
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background: rgba(0, 0, 0, 0.9); 
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .navbar-nav .nav-link {
+        color: white !important; 
+    }
+}
+
+/* Hero Section */
+
+.hero h1 {
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+.hero .btn {
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Features Section */
+.features {
+    padding: 60px 20px;
+}
+.feature-box {
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: white;
+    text-align: center;
+}
+.feature-box:hover {
+    transform: translateY(-5px);
+    background-color: #ff9800;
+    color: white;
+}
+
+/* Call to Action */
+.cta {
+    text-align: center;
+    padding: 50px 20px;
+    background: #ff9800;
+    color: white;
+}
+.cta a {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.cta a:hover {
+    background: white;
+    color: #ff9800;
+}
+
+/* about the tournament */
+.custom ul{
+    text-align: left;
+    line-height: 18px;
+}
+.custom ul li{
+    list-style-type: square;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    .hero p { font-size: 1rem; }
+}
+@media (max-width: 576px) {
+    .hero h1 { font-size: 2rem; }
+    .hero p { font-size: 0.9rem; }
+}

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Nandi Youth Tournament</title>
+        <title>Lost and Found</title>
         <link rel="stylesheet" href="{{ asset('web/vendors/feather/feather.css') }}">
         <link rel="stylesheet" href="{{ asset('web/vendors/ti-icons/css/themify-icons.css') }}">
         <link rel="stylesheet" href="{{ asset('web/vendors/css/vendor.bundle.base.css') }}">
@@ -20,9 +20,9 @@
     </head>
     <body>
         <div class="container-scroller">
-        @include('admin.layouts.header')
+        @include('user.layouts.header')
             <div class="container-fluid page-body-wrapper">
-                @include('admin.layouts.sidebar')
+                @include('user.layouts.sidebar')
                 <div class="main-panel">
                     @yield('content')
                     <!-- Footer-->

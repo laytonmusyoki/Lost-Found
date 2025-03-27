@@ -43,7 +43,12 @@ class AuthController extends Controller
         if($user){
             if(Hash::check($request->password,$user->password)){
                 auth()->login($user);
-                return redirect(route('user.dashboard'))->with('success','User logged in successfully');
+                if(auth()->user()->isAdmin()){
+                    return redirect(route('admin.dashboard'))->with('success','Admin logged in successfully');
+                }
+                else{
+                    return redirect(route('user.dashboard'))->with('success','User logged in successfully');
+                }
             }
             else{
                 return redirect()->back()->with('error','Incorrect password');
@@ -110,5 +115,10 @@ class AuthController extends Controller
         else{
             return redirect(route('auth.forgot'))->with('error','Token has been used');
         }
+    }
+
+    public function logout(){
+        auth()->logout();
+        return redirect(route('auth.login'))->with('success','Logged out successfully');
     }
 }

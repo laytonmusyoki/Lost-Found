@@ -45,18 +45,17 @@
                     <div class="col-md-4 mb-4 stretch-card transparent">
                         <div class="card card-orange">
                             <div class="card-body">
-                                <p class="mb-4">Today’s Teams</p>
-                                <p class="fs-30 mb-2"></p>
-                                <p> Teams  (30 days)</p>
+                                <p class="mb-4">Today’s items</p>
+                                <p class="fs-30 mb-2">{{$todayItems}}</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4 stretch-card transparent">
                         <div class="card card-dark-blue">
                             <div class="card-body">
-                                <p class="mb-4">Total Teams</p>
-                                <p class="fs-30 mb-2"></p>
-                                <p> Teams (Active)</p>
+                                <p class="mb-4">Total items</p>
+                                <p class="fs-15 mb-2">Unclamed {{$availableItems}}</p>
+                                <p class="fs-15 mb-2">Claimed {{$collected}}</p>
                             </div>
                         </div>
                     </div>
@@ -73,8 +72,8 @@
                         <div class="card card-dark-blue">
                             <div class="card-body">
                                 <p class="mb-4">Number of Users</p>
-                                <p class="fs-30 mb-2"></p>
-                                <p> (Admins)</p>
+                                <p class="fs-15 mb-2">Admins {{$admins}}</p>
+                                <p class="fs-15 mb-2">Users {{$users}}</p>
                             </div>
                         </div>
                     </div>

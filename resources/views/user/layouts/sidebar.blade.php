@@ -1,26 +1,20 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar" aria-label="sidebar">
   <ul class="nav">
       <li class="nav-item">
-          <a class="nav-link" href={{ route('admin.dashboard') }}>
+          <a class="nav-link" href={{ route('user.dashboard') }}>
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Dashboard</span>
           </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="">
-            <i class="icon-contract menu-icon"></i>
-            <span class="menu-title">View Teams</span>
-        </a>
-    </li>
     @auth
-    
+
     <li class="nav-item">
-        <a class="nav-link" href="">
+        <a class="nav-link" href="{{route('user.create')}}">
             <i class="icon-contract menu-icon"></i>
-            <span class="menu-title">Manage Users</span>
+            <span class="menu-title">Post Found Item</span>
         </a>
     </li>
-  
+
   @endauth
       {{-- <li class="nav-item">
         <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
@@ -37,11 +31,11 @@
             </ul>
         </div>
     </li> --}}
-    
+
 
 
       {{--}}
-      
+
       <li class="nav-item">
           <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
               <i class="icon-columns menu-icon"></i>

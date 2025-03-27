@@ -7,20 +7,27 @@
           </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="">
+        <a class="nav-link" href="{{route('items.index')}}">
             <i class="icon-contract menu-icon"></i>
-            <span class="menu-title">View Teams</span>
+            <span class="menu-title">All items</span>
         </a>
     </li>
     @auth
-    
+
     <li class="nav-item">
-        <a class="nav-link" href="">
+        <a class="nav-link" href="{{route('items.found')}}">
             <i class="icon-contract menu-icon"></i>
-            <span class="menu-title">Manage Users</span>
+            <span class="menu-title">Found items</span>
         </a>
     </li>
-  
+
+    <li class="nav-item">
+        <a class="nav-link" href="{{route('items.viewclaim')}}">
+            <i class="icon-contract menu-icon"></i>
+            <span class="menu-title">Claimed items</span>
+        </a>
+    </li>
+
   @endauth
       {{-- <li class="nav-item">
         <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
@@ -37,11 +44,11 @@
             </ul>
         </div>
     </li> --}}
-    
+
 
 
       {{--}}
-      
+
       <li class="nav-item">
           <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
               <i class="icon-columns menu-icon"></i>

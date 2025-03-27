@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="{{ asset('auth/style.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>lOGIN</title>
+    <title>Login</title>
 </head>
 <body>
     <div class="box">
